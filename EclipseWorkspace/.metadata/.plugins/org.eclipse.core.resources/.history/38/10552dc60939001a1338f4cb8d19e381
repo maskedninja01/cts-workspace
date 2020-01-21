@@ -1,0 +1,5 @@
+package com.cts.gm.dao;
+
+public interface IQueryMapper {
+
+}

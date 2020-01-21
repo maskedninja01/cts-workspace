@@ -1,0 +1,5 @@
+package com.cts.lm.exception;
+
+public class BookStoreException {
+
+}

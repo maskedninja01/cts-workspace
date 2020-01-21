@@ -1,0 +1,15 @@
+package com.cts.mm.services;
+
+import java.util.Comparator;
+
+import com.cts.mm.model.Employee;
+
+public class MovieIdComparator implements Comparator<Employee> {
+
+	@Override
+	public int compare(Employee o1, Employee o2) {
+		// TODO Auto-generated method stub
+		return o1.getMovieId().compareTo(o2.getMovieId());
+	}
+
+}

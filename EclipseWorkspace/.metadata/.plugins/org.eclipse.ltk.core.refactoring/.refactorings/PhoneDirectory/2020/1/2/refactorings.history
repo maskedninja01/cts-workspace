@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.cts.pb.service.PhonebookImpl.java&apos; to &apos;PhonebookServiceImpl.java&apos;&#x0D;&#x0A;- Original project: &apos;PhoneDirectory&apos;&#x0D;&#x0A;- Original element: &apos;com.cts.pb.service.PhonebookImpl.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cts.pb.service.PhonebookServiceImpl.java&apos;" description="Rename compilation unit &apos;PhonebookImpl.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.cts.pb.service{PhonebookImpl.java" name="PhonebookServiceImpl.java" references="false" stamp="1578724854367" version="1.0"/>
+</session>
