@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222\JDBCDemo"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222\"/>
@@ -46,11 +47,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="cts.model"/>
 			<item value="com.cts.jmd"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="HibJPA"/>
 			<item value="jdbc-maven-demo"/>
 			<item value="jdbc_maven_demo"/>
 		</list>

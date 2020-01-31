@@ -1,5 +1,0 @@
-package com.cts.lm.dao;
-
-public interface IBookDAO {
-
-}

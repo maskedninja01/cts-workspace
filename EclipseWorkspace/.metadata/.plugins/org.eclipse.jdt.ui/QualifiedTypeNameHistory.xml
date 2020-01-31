@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.cts.oopp.model.Person"/>
-<fullyQualifiedTypeName name="com.cts.oopp.model.Employee"/>
-<fullyQualifiedTypeName name="com.cts.oopp.model.Complex"/>
-<fullyQualifiedTypeName name="com.cts.oopp.model.Student"/>
 <fullyQualifiedTypeName name="com.cts.oopp.model.Rectangle"/>
 <fullyQualifiedTypeName name="com.cts.oopp.model.Circle"/>
 <fullyQualifiedTypeName name="com.cts.oopp.model.Shape"/>
@@ -42,7 +38,6 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.cts.jdbcd.ui.PreparedStatement"/>
 <fullyQualifiedTypeName name="com.cts.gm.util.ConnectionProvider"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -55,4 +50,14 @@
 <fullyQualifiedTypeName name="com.cts.gm.dao.GymMembersJDBCImpl"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.cts.gm.dao.GymMembersIOStreamDAO"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
