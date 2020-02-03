@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace\InnerClassesDemo\src\cts\overriding\RuntimePolyDemo.java"/>
 			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222\JDBCDemo"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222"/>
@@ -17,6 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -47,15 +49,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="cts.model"/>
-			<item value="com.cts.jmd"/>
+			<item value="com.cts.spring"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="HibJPA"/>
-			<item value="jdbc-maven-demo"/>
-			<item value="jdbc_maven_demo"/>
+			<item value="spring-quickstart"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
