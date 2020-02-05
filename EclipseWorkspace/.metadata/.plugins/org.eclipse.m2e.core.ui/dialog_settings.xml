@@ -2,8 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace\InnerClassesDemo\src\cts\overriding\RuntimePolyDemo.java"/>
+			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace\HibJPA\src\main\resources\META-INF\persistence.xml"/>
 			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace"/>
+			<item value="C:\Users\Alchemy\Documents\cts-workspace\EclipseWorkspace\InnerClassesDemo\src\cts\overriding\RuntimePolyDemo.java"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222\JDBCDemo"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222"/>
 			<item value="C:\Users\Alchemy\Documents\Dipesh 844222\"/>
@@ -49,11 +50,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cts.hibernate2"/>
+			<item value="com.cts.Hibernate2"/>
 			<item value="com.cts.spring"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="jpa-demo"/>
+			<item value="jpa"/>
 			<item value="spring-quickstart"/>
 		</list>
 		<list key="projectNameTemplate">
