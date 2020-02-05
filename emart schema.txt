@@ -1,0 +1,23 @@
+create database emart;
+use emart;
+
+create table buyer(
+buyer_id varchar(20) not null,
+buyer_name varchar(50) not null,
+buyer_password varchar(50) not null,
+buyer_email varchar(40) not null,
+buyer_phone varchar(12) not null,
+constraint buyer_id_pk primary key(buyer_id)); 
+
+desc buyer;
+
+create table bill(
+bill_id varchar(30),
+item_id varchar(30),
+bill_amount 
+
+create table order(
+buyer_id varchar(20),
+order_id varchar(30),
+bill_id varchar(30),
+

@@ -12,7 +12,7 @@ public class EmpUi {
 	public static void main(String[] args) {
 		Emp e= new Emp(100,"Dipesh",25000);
 		Manager m = new Manager(102,"Anubhav",35000,9300);
-		ContractEmp ce = new ContractEmp(193,"Pran",62998,11);
+		ContractEmp ce = new ContractEmp(194,"Penny",50000,21);
 		
 		EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
 		
