@@ -38,7 +38,9 @@ public class BankAccount {
 		this.accno = accno;
 		this.customer = customer;
 	}
-
+	public BankAccount(String accno) {
+		this.accno = accno;
+	}
 	public BankAccount() {
 	}
 }

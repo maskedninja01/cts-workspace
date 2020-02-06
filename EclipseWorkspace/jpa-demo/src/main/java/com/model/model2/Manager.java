@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "mgrs_only")
 
 public class Manager extends Emp {
-	@Column(name = "hra")
+	@Column
 	private double allowance;
 
 	public double getAllowance() {

@@ -25,9 +25,9 @@ import javax.persistence.Table;
 public class Emp {
 
 	@Id
-	@Column(name = "eid")
+	@Column(name = "employeeid")
 	private long eid;
-	@Column
+	@Column(name="employeename")
 	private String ename;
 	@Column
 	private double basic;
