@@ -15,7 +15,6 @@ export class PipesDemoComponent {
     this.numData=Math.PI;
     this.date= new Date();
   }
-  ngOnInit() {
-  }
+  
 
 }
