@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AppComponent } from './app.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactDetailsComponent } from './contact-details/contact-details.component';
+
+const routes: Routes = [
+  {path:'',component:DashboardComponent},
+  {path:'list',component:ContactListComponent},
+  {path:'add',component:ContactFormComponent},
+  {path:'edit/:cid',component:ContactFormComponent},
+  {path:'details/:id',component:ContactDetailsComponent},
+  {path:'**',component:PageNotFoundComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
