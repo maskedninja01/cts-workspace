@@ -13,9 +13,9 @@ public class CustomerAggregateOneToOne {
 		
 		
 		BankAccount ba = new BankAccount();
-		Customer cs = new Customer("888542323113","Priyanka",ba);
-		Customer cs2= new Customer("323232324233","Neha",ba);
-		ba.setAccno("SBIN820728474");
+		Customer cs = new Customer("44442313121","Mahesh",ba);
+		Customer cs2= new Customer("31241214123","Megha",ba);
+		ba.setAccno("SBIN64836483");
 		
 		ba.setCustomer(cs);
 		ba.setCustomer(cs2);

@@ -54,10 +54,10 @@
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
 <fullyQualifiedTypeName name="com.model.aggregate.BankAccount"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="com.util.JPAUtil"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
 </qualifiedTypeNameHistroy>
