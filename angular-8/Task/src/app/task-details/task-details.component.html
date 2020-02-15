@@ -1,7 +1,7 @@
 <section class="container-fluid bg-light p-5">
     <h3>Task</h3>
     <div class="card" *ngIf="task==null">
-        <p class="card-text">No Contact Found</p>
+        <p class="card-text">No task Found</p>
     </div>
 
     <table class="table w-50 table-bordered" *ngIf="task!=null">
@@ -25,7 +25,7 @@
             <tr>
                 <th colspan="2" class="pull-right">
                     <a class="btn btn-success btn-sm mr-2"
-                    [routerLink]="'/edit/'">EDIT</a>
+                    [routerLink]="'/edit/'+task.taskId">EDIT</a>
                 </th>
             </tr>
         </tbody>

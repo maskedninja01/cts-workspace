@@ -4,17 +4,21 @@ import java.util.Scanner;
 
 import javax.persistence.EntityManager;
 
+import org.apache.log4j.Logger;
+
+
 import com.model.Employee;
 import com.util.JPAUtil;
 
+
 public class EmpUi {
+	static Logger log = Logger.getLogger(EmpUi.class.getName());
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		
 		Employee e = new Employee();
-		System.out.println("EmpId:");
+		System.out.println("EmpId");
 		e.setEmpId(scan.nextInt());
 		System.out.println("EName: ");
 		e.setEmpName(scan.next());
@@ -25,9 +29,11 @@ public class EmpUi {
 		
 		em.getTransaction().begin();
 		em.persist(e);
+		log.info(e);
+		log.debug(e+"This is debug message");
 		em.getTransaction().commit();
 		
-		System.out.println("Emp Saved");
+		log.info("Emp Saved");
 		JPAUtil.shutdown();
 		scan.close();
 	}

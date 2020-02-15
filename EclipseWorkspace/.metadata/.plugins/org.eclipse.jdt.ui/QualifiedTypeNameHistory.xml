@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="com.cts.pb.dao.IPhonebookDAO"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="com.cts.pb.dao.PhonebookDAOCollectionImpl"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="com.util.JPAUtil"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+<fullyQualifiedTypeName name="com.sun.istack.logging.Logger"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.common.util.impl.Log_.logger"/>
 </qualifiedTypeNameHistroy>

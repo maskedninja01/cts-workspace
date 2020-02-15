@@ -50,6 +50,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cts.kavita"/>
+			<item value="com.cts."/>
 			<item value="com.cts.emart"/>
 			<item value="com.cts.hibernate2"/>
 			<item value="com.cts.Hibernate2"/>
@@ -58,6 +60,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="MavenByKavita"/>
 			<item value="eMart-Project"/>
 			<item value="jpa-demo"/>
 			<item value="jpa"/>
