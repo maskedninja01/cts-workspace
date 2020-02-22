@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="gnp1"
+		class="com.cts.services.GreetNoteProviderSimpleImpl">
+		<!-- <property name="greeting" value="Hey"/> -->
+		<!-- <constructor-arg index="0" value="namaskar"/> -->
+	</bean>
+
+
+	<!-- bean definitions here -->
+	<bean id="g1" class="com.cts.one.Greet" />
+
+	<bean id="g2" class="com.cts.one.GreetServiceEnhancedImpl">
+		<!-- <property name="greeting" value="Hey"/> -->
+		<constructor-arg index="0" value="namaskar" />
+	</bean>
+
+	<bean id="g3" class="com.cts.one.GreetServiceAdvancedImpl">
+		<property name="gnp" ref="gnp1" />
+	</bean>
+	
+		<bean id="g4" class="com.cts.one.GreetServiceAdvancedImpl">
+		<property name="gnp"><bean class="com.cts.one.GreetNoteProviderTimeBasedImpl"/></property>
+	</bean>
+
+</beans>
