@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ import com.cts.swrd.model.Employee;
 import com.cts.swrd.service.EmployeeService;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/emps")
 public class EmployeeAPI {
 	
@@ -30,7 +32,7 @@ public class EmployeeAPI {
 		return new ResponseEntity<List<Employee>>(empService.findAll(), HttpStatus.OK);
 	}
 	
-	@GetMapping("/empId:[0-9]{1,4}")
+	@GetMapping("/{empId:[0-9]{1,4}}")
 	public ResponseEntity<Employee> findById(@PathVariable("empId") Long empId){
 		ResponseEntity<Employee> response=null;
 		Employee emp = empService.findById(empId);
@@ -43,7 +45,7 @@ public class EmployeeAPI {
 		return response;
 	}
 	
-	@GetMapping("/mno:[0-9]{1,4}")
+	@GetMapping("/{mno:[1-9][0-9]{9}}")
 	public ResponseEntity<Employee> findByMobileNumber(@PathVariable("mno") Long mno){
 		ResponseEntity<Employee> response=null;
 		Employee mn = empService.findById(mno);
