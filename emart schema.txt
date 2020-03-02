@@ -1,3 +1,5 @@
+drop database emart;
+
 create database emart;
 use emart;
 
