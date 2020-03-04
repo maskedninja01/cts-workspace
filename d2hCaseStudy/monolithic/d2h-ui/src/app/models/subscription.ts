@@ -10,6 +10,6 @@ export class Subscription {
     grossTotalAmount:number;
     gstAmount:number;
     discount:Discount;
-    discountAmount:number;
+    discountAmuont:number;
     netPayableAmount:number;
 }
