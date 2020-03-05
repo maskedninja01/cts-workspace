@@ -1,0 +1,27 @@
+<h2>Users List</h2>
+
+<p *ngIf='!users && !errMsg'>Loading...Please wait!</p>
+<p *ngIf='errMsg'>{{errMsg}}</p>
+
+<table *ngIf='users' cellspacing='10' cellpadding='10'>
+    <thead>
+        <tr>
+        <th>UserId#</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>CreatedDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.userId}}</td>
+            <td>{{u.firstName}}</td>
+            <td>{{u.lastName}}</td>
+            <td>{{u.emailId}}</td>
+            <td>{{u.mobileNumber}}</td>
+            <td>{{u.createdDate}}</td>
+        </tr>
+    </tbody>
+</table>

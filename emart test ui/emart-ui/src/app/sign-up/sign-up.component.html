@@ -1,0 +1,25 @@
+<section class="container col-md-8 bg-light mt-3">
+    <form class="form" (onsubmit)="save()">
+        <div>
+            <legend>Sign Up</legend>
+            <label>First Name</label>
+            <input type="text" name="fnm" [(ngModel)]="user.firstName" pattern="[A-Z]{1}[A-Za-z\s]{2,19}" class="form-control"
+            required="required" minlength="3">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lnm" [(ngModel)]="user.lastName" pattern="[A-Z]{1}[A-Za-z\s]{2,19}" class="form-control"/>
+        </div>
+        <div>
+            <label>E-Mail Id</label>
+            <input type="email" name="eml" [(ngModel)]="user.emailId" class="form-control" required="required" minlength="8"/>
+        </div>
+        <div>
+            <label>Mobile Number</label>
+            <input type="tel" name="mbl" [(ngModel)]="user.mobileNumber" class="form-control"/>
+        </div>
+        <div>
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</section>

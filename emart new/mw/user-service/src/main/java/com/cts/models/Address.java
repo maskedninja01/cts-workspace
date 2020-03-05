@@ -1,4 +1,4 @@
-package com.cts.beans;
+package com.cts.models;
 
 public class Address {
     private String line1;

@@ -1,4 +1,4 @@
-package com.cts.beans;
+package com.cts.models;
 
 public class User {
 	private int userId;
@@ -46,5 +46,19 @@ public class User {
 	public void setJwtToken(String jwtToken) {
 		this.jwtToken = jwtToken;
 	}
+
+	public User(int userId, String userName, String password, Role role, String jwtToken) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.password = password;
+		this.role = role;
+		this.jwtToken = jwtToken;
+	}
+
+	public User() {
+		super();
+	}
+	
 
 }

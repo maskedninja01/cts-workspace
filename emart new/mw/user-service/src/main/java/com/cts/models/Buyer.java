@@ -1,8 +1,8 @@
-package com.cts.beans;
+package com.cts.models;
 
 import java.time.LocalDate;
 
-public class Buyer {
+public class Buyer extends User {
 	private int buyerId;
 	private String firstName;
 	private String lastName;
@@ -10,7 +10,6 @@ public class Buyer {
 	private String mobileNumber;
 	private Address address;
 	private LocalDate createdDate;
-	private User userAccount;
 
 	public int getBuyerId() {
 		return buyerId;
@@ -68,11 +67,21 @@ public class Buyer {
 		this.createdDate = createdDate;
 	}
 
-	public User getUserAccount() {
-		return userAccount;
+	public Buyer(int userId, String userName, String password, Role role, String jwtToken, int buyerId,
+			String firstName, String lastName, String emailId, String mobileNumber, Address address,
+			LocalDate createdDate) {
+		super(userId, userName, password, role, jwtToken);
+		this.buyerId = buyerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.emailId = emailId;
+		this.mobileNumber = mobileNumber;
+		this.address = address;
+		this.createdDate = createdDate;
 	}
 
-	public void setUserAccount(User userAccount) {
-		this.userAccount = userAccount;
+	public Buyer(int userId, String userName, String password, Role role, String jwtToken) {
+		super(userId, userName, password, role, jwtToken);
 	}
+
 }

@@ -1,6 +1,6 @@
-package com.cts.beans;
+package com.cts.models;
 
-public class Seller {
+public class Seller extends User {
 	private int sellerId;
 	private String firstName;
 	private String lastName;
@@ -10,7 +10,6 @@ public class Seller {
 	private String website;
 	private String email;
 	private String phone;
-	private User userAccount;
 
 	public int getSellerId() {
 		return sellerId;
@@ -84,12 +83,23 @@ public class Seller {
 		this.phone = phone;
 	}
 
-	public User getUserAccount() {
-		return userAccount;
+	public Seller(int userId, String userName, String password, Role role, String jwtToken, int sellerId,
+			String firstName, String lastName, String companyName, String companyDescription, Address address,
+			String website, String email, String phone) {
+		super(userId, userName, password, role, jwtToken);
+		this.sellerId = sellerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.companyName = companyName;
+		this.companyDescription = companyDescription;
+		this.address = address;
+		this.website = website;
+		this.email = email;
+		this.phone = phone;
 	}
 
-	public void setUserAccount(User userAccount) {
-		this.userAccount = userAccount;
+	public Seller(int userId, String userName, String password, Role role, String jwtToken) {
+		super(userId, userName, password, role, jwtToken);
 	}
 
 }
