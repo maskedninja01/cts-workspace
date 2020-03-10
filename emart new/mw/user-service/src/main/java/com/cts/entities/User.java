@@ -1,22 +1,38 @@
 package com.cts.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
+@Inheritance(strategy = InheritanceType.JOINED)
+@Entity(name = "users")
 public class User {
-	private int userId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
+	private Long userId;
+	@Column
 	private String userName;
+	@Column
 	private String password;
-	private Role role;
-	private String jwtToken;
-
-	public int getUserId() {
-		return userId;
-	}
-
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
+	@Column
+	private String role;
+//	private String jwtToken;
 
 	public String getUserName() {
 		return userName;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	public void setUserName(String userName) {
@@ -31,34 +47,24 @@ public class User {
 		this.password = password;
 	}
 
-	public Role getRole() {
+	public String getRole() {
 		return role;
 	}
 
-	public void setRole(Role role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 
-	public String getJwtToken() {
-		return jwtToken;
-	}
-
-	public void setJwtToken(String jwtToken) {
-		this.jwtToken = jwtToken;
-	}
-
-	public User(int userId, String userName, String password, Role role, String jwtToken) {
+	public User(Long userId, String userName, String password, String role) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.password = password;
 		this.role = role;
-		this.jwtToken = jwtToken;
 	}
 
 	public User() {
 		super();
 	}
-	
 
 }

@@ -1,31 +1,20 @@
 package com.cts.entities;
 
-import java.time.LocalDate;
-
+import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
+@Entity(name = "Buyers")
 public class Buyer extends User {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int buyerId;
+
 	private String firstName;
 	private String lastName;
+	@Column(unique = true)
 	private String emailId;
 	private String mobileNumber;
+	@Embedded
 	private Address address;
-	private LocalDate createdDate;
-
-	public int getBuyerId() {
-		return buyerId;
-	}
-
-	public void setBuyerId(int buyerId) {
-		this.buyerId = buyerId;
-	}
+	private String createdDate;
 
 	public String getFirstName() {
 		return firstName;
@@ -67,19 +56,17 @@ public class Buyer extends User {
 		this.address = address;
 	}
 
-	public LocalDate getCreatedDate() {
+	public String getCreatedDate() {
 		return createdDate;
 	}
 
-	public void setCreatedDate(LocalDate createdDate) {
+	public void setCreatedDate(String createdDate) {
 		this.createdDate = createdDate;
 	}
 
-	public Buyer(int userId, String userName, String password, Role role, String jwtToken, int buyerId,
-			String firstName, String lastName, String emailId, String mobileNumber, Address address,
-			LocalDate createdDate) {
-		super(userId, userName, password, role, jwtToken);
-		this.buyerId = buyerId;
+	public Buyer(Long userId, String userName, String password, String role, String firstName, String lastName,
+			String emailId, String mobileNumber, Address address, String createdDate) {
+		super(userId, userName, password, role);
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
@@ -88,8 +75,8 @@ public class Buyer extends User {
 		this.createdDate = createdDate;
 	}
 
-	public Buyer(int userId, String userName, String password, Role role, String jwtToken) {
-		super(userId, userName, password, role, jwtToken);
+	public Buyer() {
+		super();
 	}
 
 }

@@ -12,18 +12,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @CrossOrigin
+@Api(value = "My emart User Controller", description = "Rest Controller for Users")
 public class UserController {
 	
 	@Autowired
 	UserService service;
 	
+	
+	@ApiOperation(
+			value = "Get Users",
+			produces = "A List of Users",
+			notes = "Hit this URL to get All Users"
+			)
 	@RequestMapping("/users")
 	List<User> getAllUsers(){
 		return service.getAllUsers();
 	}
 	
+	
+	@ApiOperation(
+			value = "Post User",
+			produces = "Posts a User",
+			notes = "Hit this URL to set a users"
+			)
 	@RequestMapping(method = RequestMethod.POST, value="/users")
 	void addUser(@RequestBody User user) {
 		user.setCreatedDate(new Date().toString());

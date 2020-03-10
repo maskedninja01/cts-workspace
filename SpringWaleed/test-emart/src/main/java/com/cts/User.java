@@ -5,18 +5,28 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.hibernate.annotations.GenerationTime;
+import io.swagger.annotations.ApiModelProperty;
 
 @Entity
 public class User {
+	@ApiModelProperty(value = "ID for a User")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	Integer userId;
 	
+	@ApiModelProperty(value = "FirstName for a User")
 	String firstName;
+	
+	@ApiModelProperty(value = "LastName for a User")
 	String lastName;
+	
+	@ApiModelProperty(value = "e-mail for a User")
 	String emailId;
+	
+	@ApiModelProperty(value = "mobile number for a User")
 	String mobileNumber;
+	
+	@ApiModelProperty(value = "created date for a User")
 	String createdDate;
 
 	public Integer getUserId() {

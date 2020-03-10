@@ -1,23 +1,19 @@
 package com.cts.entities;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+
+@Entity(name = "Sellers")
 public class Seller extends User {
-	private int sellerId;
 	private String firstName;
 	private String lastName;
 	private String companyName;
 	private String companyDescription;
+	@Embedded
 	private Address address;
 	private String website;
-	private String email;
+	private String emailId;
 	private String phone;
-
-	public int getSellerId() {
-		return sellerId;
-	}
-
-	public void setSellerId(int sellerId) {
-		this.sellerId = sellerId;
-	}
 
 	public String getFirstName() {
 		return firstName;
@@ -68,11 +64,11 @@ public class Seller extends User {
 	}
 
 	public String getEmail() {
-		return email;
+		return emailId;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String emailId) {
+		this.emailId = emailId;
 	}
 
 	public String getPhone() {
@@ -83,23 +79,18 @@ public class Seller extends User {
 		this.phone = phone;
 	}
 
-	public Seller(int userId, String userName, String password, Role role, String jwtToken, int sellerId,
-			String firstName, String lastName, String companyName, String companyDescription, Address address,
-			String website, String email, String phone) {
-		super(userId, userName, password, role, jwtToken);
-		this.sellerId = sellerId;
+	public Seller(Long userId, String userName, String password, String role, String firstName, String lastName,
+			String companyName, String companyDescription, Address address, String website, String emailId,
+			String phone) {
+		super(userId, userName, password, role);
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.companyName = companyName;
 		this.companyDescription = companyDescription;
 		this.address = address;
 		this.website = website;
-		this.email = email;
+		this.emailId = emailId;
 		this.phone = phone;
-	}
-
-	public Seller(int userId, String userName, String password, Role role, String jwtToken) {
-		super(userId, userName, password, role, jwtToken);
 	}
 
 }
